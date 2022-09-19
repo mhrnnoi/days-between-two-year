@@ -50,7 +50,7 @@ namespace days_between_two_year
             {
                 throw new Exception();
             }
-            if (int.Parse(arr1[2]) < 1 || int.Parse(arr1[1]) > 12 || int.Parse(arr1[1]) < 1 || int.Parse(arr1[0]) > 31 || int.Parse(arr1[0]) < 1)
+            if (int.Parse(arr1[2]) < 0 || int.Parse(arr1[1]) > 12 || int.Parse(arr1[1]) < 1 || int.Parse(arr1[0]) > 31 || int.Parse(arr1[0]) < 1)
             {
                 throw new Exception();
             }
