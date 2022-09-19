@@ -7,7 +7,7 @@ namespace days_between_two_year
         static void Main(string[] args)
         {
             Console.WriteLine("Heyy there");
-            Console.WriteLine("enter two date with this format: \"day, month, year\"");
+            Console.WriteLine("enter two dates with this format: \"day, month, year\"");
 
             Console.WriteLine("enter date 1 :");
             var date1 = Console.ReadLine();
