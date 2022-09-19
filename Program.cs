@@ -14,8 +14,16 @@ namespace days_between_two_year
 
             Console.WriteLine("enter date 2 :");
             var date2 = Console.ReadLine();
+            try
+            {
+                Console.WriteLine(Differences(date1, date2) + " " + "days");
 
-            Console.WriteLine(Differences(date1, date2) + " " + "days");
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("invalid input");
+            }
 
         }
         public static int Differences(string date1, string date2)
