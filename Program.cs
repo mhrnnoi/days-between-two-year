@@ -58,7 +58,7 @@ namespace days_between_two_year
             {
                 throw new Exception();
             }
-            if (IsLeapYear(int.Parse(arr1[2])) && int.Parse(arr1[0]) > 29)
+            if (IsLeapYear(int.Parse(arr1[2])) && int.Parse(arr1[1]) == 12 && int.Parse(arr1[0]) > 29)
             {
                 throw new Exception();
             }
