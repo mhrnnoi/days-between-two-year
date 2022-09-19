@@ -28,8 +28,11 @@ namespace days_between_two_year
         }
         public static int Differences(string date1, string date2)
         {
+
             var arr1 = date1.Split(',');
+
             var arr2 = date2.Split(',');
+
 
             var days1 = days(arr1);
             var days2 = days(arr2);
@@ -43,6 +46,14 @@ namespace days_between_two_year
 
         public static int days(string[] arr1)
         {
+            if (arr1.Length != 3)
+            {
+                throw new Exception();
+            }
+            if (int.Parse(arr1[2]) < 1 || int.Parse(arr1[1]) > 12 || int.Parse(arr1[1]) < 1 || int.Parse(arr1[0]) > 31 || int.Parse(arr1[0]) < 1)
+            {
+                throw new Exception();
+            }
             var counter = 0;
             for (int i = 1; i <= int.Parse(arr1[2]); i++)
             {
