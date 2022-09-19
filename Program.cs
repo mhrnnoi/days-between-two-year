@@ -58,6 +58,10 @@ namespace days_between_two_year
             {
                 throw new Exception();
             }
+            if (IsLeapYear(int.Parse(arr1[2])) && int.Parse(arr1[0]) > 29)
+            {
+                throw new Exception();
+            }
             var counter = 0;
             for (int i = 1; i <= int.Parse(arr1[2]); i++)
             {
